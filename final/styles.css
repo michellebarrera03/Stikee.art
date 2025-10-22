@@ -1,0 +1,15 @@
+/*  Insert all your glorious CSS styles below! */
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+nav ul li{
+  background-color: skyblue;
+  padding: 5px;
+  border-radius: 5px;
+}
