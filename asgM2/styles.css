@@ -1,4 +1,3 @@
-/*Insert all your glorious CSS styles below! */
 /* --- Reset --- */
 * {
     margin: 0;
@@ -9,9 +8,9 @@
 /* --- Body --- */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #fff8f5; /* soft pastel cream */
+    background-color: #fff8f5;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     padding: 0 1rem;
 }
 
@@ -30,14 +29,8 @@ header h1 {
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #555;
-}
-
-/* --- Main Sections --- */
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
 }
 
 /* --- Section Titles --- */
@@ -54,65 +47,69 @@ section h2 {
     background-color: #fff0f5;
     border-radius: 15px;
     padding: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .ride img {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     display: block;
     margin: 0.5rem auto 1rem;
     border-radius: 10px;
 }
 
-/* --- Highlight List with Image --- */
-.photo-zones-shops {
+/* --- Photo Zones & Souvenir Shops Sections --- */
+.section-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem;
     align-items: flex-start;
-    gap: 2rem;
-    margin: 2rem 0;
+    margin-bottom: 1rem;
 }
 
-.highlight-list {
-    flex: 1 1 45%; /* list takes ~45% of width */
+.section-text {
+    flex: 1 1 45%;
 }
 
-.highlight-list ul {
+.section-text ul {
     list-style: none;
 }
 
-.highlight-list ul li {
-    background-color: #e0f7fa; /* pastel blue highlight */
-    padding: 0.3rem 0.8rem;   /* smaller padding */
-    margin-bottom: 0.4rem;    /* tighter spacing */
-    border-radius: 10px;
-    font-size: 0.9rem;        /* smaller font size */
+.section-text ul li {
+    background-color: #e0f7fa;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 8px;
+    font-size: 0.8rem; /* very compact */
     color: #333;
 }
 
-.highlight-image {
-    flex: 1 1 45%; /* image takes ~45% of width */
+.section-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.section-image {
+    flex: 1 1 45%;
     text-align: center;
 }
 
-.highlight-image img {
+.section-image img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 15px;
+    max-width: 250px;
+    border-radius: 10px;
 }
 
 /* --- Footer --- */
 footer {
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     margin-top: 2rem;
     background-color: #fce4ec;
     border-top: 2px solid #ffc1cc;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #555;
 }
 
