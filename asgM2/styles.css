@@ -87,10 +87,10 @@ section h2 {
 
 .highlight-list ul li {
     background-color: #e0f7fa; /* pastel blue highlight */
-    padding: 0.5rem 1rem;
-    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.8rem;   /* smaller padding */
+    margin-bottom: 0.4rem;    /* tighter spacing */
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;        /* smaller font size */
     color: #333;
 }
 
