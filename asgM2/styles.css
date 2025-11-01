@@ -103,10 +103,11 @@ section h2 {
 
 .section-text ul li {
     background-color: #e0f7fa;
-    padding: 0.2rem 0.5rem;
+    padding: 0.25rem 0.6rem;  /* slightly more padding */
     margin-bottom: 0.3rem;
     border-radius: 8px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;        /* bigger than 0.8rem */
+    font-weight: 600;         /* make it bolder */
     color: #333;
 }
 
