@@ -1,5 +1,5 @@
 /*Insert all your glorious CSS styles below! */
-/* --- Reset some default styles --- */
+/* --- Reset --- */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +8,18 @@
 
 /* --- Body --- */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* playful, cute font */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #fff8f5; /* soft pastel cream */
     color: #333;
     line-height: 1.6;
+    padding: 0 1rem;
 }
 
 /* --- Header --- */
 header {
     text-align: center;
     padding: 2rem 1rem;
-    background: linear-gradient(135deg, #fce4ec, #e0f7fa); /* soft pastel gradient */
+    background: linear-gradient(135deg, #fce4ec, #e0f7fa);
     border-bottom: 2px solid #fcd5ce;
 }
 
@@ -37,7 +38,6 @@ header p {
 main {
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 0 1rem;
 }
 
 /* --- Section Titles --- */
@@ -49,36 +49,60 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-/* --- Ride Cards --- */
+/* --- Featured Rides --- */
 .ride {
-    background-color: #fff0f5; /* very soft pink */
+    background-color: #fff0f5;
     border-radius: 15px;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-/* --- Ride Images Placeholder --- */
 .ride img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     display: block;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 1rem;
     border-radius: 10px;
 }
 
-/* --- Lists --- */
-ul {
-    list-style-type: none;
-    margin-left: 0;
+/* --- Highlight List with Image --- */
+.photo-zones-shops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-ul li {
-    background-color: #e0f7fa; /* soft pastel blue */
+.highlight-list {
+    flex: 1 1 45%; /* list takes ~45% of width */
+}
+
+.highlight-list ul {
+    list-style: none;
+}
+
+.highlight-list ul li {
+    background-color: #e0f7fa; /* pastel blue highlight */
     padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
+    font-size: 1rem;
     color: #333;
+}
+
+.highlight-image {
+    flex: 1 1 45%; /* image takes ~45% of width */
+    text-align: center;
+}
+
+.highlight-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
 }
 
 /* --- Footer --- */
@@ -91,3 +115,4 @@ footer {
     font-size: 0.9rem;
     color: #555;
 }
+
