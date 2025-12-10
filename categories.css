@@ -1,140 +1,61 @@
-/* --- Reset --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
 }
 
-/* --- Body Container --- */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #fff8f5;
-    color: #333;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fffdf9;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* --- Header --- */
-header {
+.page-title {
     text-align: center;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid #fcd5ce;
-}
-
-header h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #ff8ba7;
+    color: #6c5ce7;
+    margin-bottom: 3rem;
 }
 
-header p {
-    font-size: 1rem;
-    color: #555;
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* --- Section Titles --- */
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ff91a4;
-    border-bottom: 2px dashed #ffc1cc;
-    padding-bottom: 0.5rem;
-}
-
-/* --- Featured Rides --- */
-.rides-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.ride {
-    background-color: #fff0f5;
-    border-radius: 15px;
-    padding: 0.5rem;
-    width: 200px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+.card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem;
     text-align: center;
-    flex: 0 0 auto;
 }
 
-.ride img {
-    width: 100%;
-    max-width: 150px;
-    display: block;
-    margin: 0.5rem auto;
-    border-radius: 10px;
-}
-
-.ride h3 {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-.ride p {
-    font-size: 0.8rem;
-}
-
-/* --- Photo Zones & Souvenir Shops --- */
-.section-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-}
-
-.section-text {
-    flex: 1 1 45%;
-}
-
-.section-text ul {
-    list-style: none;
-}
-
-.section-text ul li {
-    background-color: #e0f7fa;
-    padding: 0.25rem 0.6rem;  /* slightly more padding */
-    margin-bottom: 0.3rem;
+.card-image {
+    width: 180px;
+    height: 180px;
+    background-color: #f8f9fa;
     border-radius: 8px;
-    font-size: 0.9rem;        /* bigger than 0.8rem */
-    font-weight: 600;         /* make it bolder */
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.card-caption {
+    font-size: 1.2rem;
     color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
-.section-text p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-top: 0.3rem;
+.card-button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.section-image {
-    flex: 1 1 45%;
-    text-align: center;
-}
-
-.section-image img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 1rem 1rem;
-    margin-top: 2rem;
-    background-color: #fce4ec;
-    border-top: 2px solid #ffc1cc;
-    font-size: 0.8rem;
-    color: #555;
+.card-button:hover {
+    background-color: #5b4bc4;
 }
