@@ -3,3 +3,158 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Creators - Stickee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="creators.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="creators.html">Creators</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <h1 class="page-title">Featured Creators</h1>
+        
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow" onclick="changeSlide(-1)">&#10094;</button>
+            
+            <div class="carousel-content">
+                <div class="slide active">
+                    <div class="slide-text">
+                        <h2>Artist Spotlight</h2>
+                        <p>Discover talented creators making amazing digital stickers. Each artist brings their own unique style and creativity to our community.</p>
+                    </div>
+                    <div class="slide-image">
+                        <p>Image Placeholder</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-text">
+                        <h2>New Talent</h2>
+                        <p>Fresh faces joining our platform every day. Support up and coming artists as they share their creative vision with the world.</p>
+                    </div>
+                    <div class="slide-image">
+                        <p>Image Placeholder</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-text">
+                        <h2>Top Rated</h2>
+                        <p>The most loved creators on our platform. Browse their collections and see why the community can't get enough of their work.</p>
+                    </div>
+                    <div class="slide-image">
+                        <p>Image Placeholder</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-text">
+                        <h2>Exclusive Content</h2>
+                        <p>Premium sticker packs from our featured artists. Get access to limited edition designs you won't find anywhere else.</p>
+                    </div>
+                    <div class="slide-image">
+                        <p>Image Placeholder</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-arrow right-arrow" onclick="changeSlide(1)">&#10095;</button>
+            
+            <div class="slide-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="top-artists-section">
+            <div class="section-header">
+                <h3>TOP 5 ARTISTS GLOBAL</h3>
+            </div>
+            
+            <div class="artists-row">
+                <div class="artist-card">
+                    <div class="artist-circle">
+                        <p>Image</p>
+                    </div>
+                    <div class="artist-name">Artist Name</div>
+                    <div class="artist-subtitle">Digital Artist</div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="artist-circle">
+                        <p>Image</p>
+                    </div>
+                    <div class="artist-name">Artist Name</div>
+                    <div class="artist-subtitle">Illustrator</div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="artist-circle">
+                        <p>Image</p>
+                    </div>
+                    <div class="artist-name">Artist Name</div>
+                    <div class="artist-subtitle">Designer</div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="artist-circle">
+                        <p>Image</p>
+                    </div>
+                    <div class="artist-name">Artist Name</div>
+                    <div class="artist-subtitle">Creator</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2014 - 2025 | stickee.art</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = currentSlide + direction;
+            
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function goToSlide(slideIndex) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = slideIndex;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
