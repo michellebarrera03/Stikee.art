@@ -24,7 +24,7 @@ nav {
 }
 
 .logo-animated {
-    height: 70px;
+    height: 90px;
     width: auto;
     animation: slideInBounce 1s ease-out;
 }
