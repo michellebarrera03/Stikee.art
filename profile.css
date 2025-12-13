@@ -183,3 +183,27 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     animation: none;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .stickers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-container {
+        padding: 2rem 1rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
