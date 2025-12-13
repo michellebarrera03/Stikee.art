@@ -283,17 +283,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-logo {
-        position: static !important;
-        transform: none !important;
+        position: static;
+        transform: none;
         text-align: center;
         margin-bottom: 0.5rem;
-        padding-top: 0 !important;
-        left: auto !important;
-        top: auto !important;
+        padding-top: 0;
     }
 
     .logo-animated {
-        height: 100px !important;
+        height: 100px;
     }
 
     nav ul {
