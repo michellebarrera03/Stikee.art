@@ -116,7 +116,6 @@ nav a:hover {
 
 .hero-image {
     flex: 1;
-    background-color: #f0f0f0;
     height: 300px;
     display: flex;
     align-items: center;
