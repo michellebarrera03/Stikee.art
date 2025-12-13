@@ -52,6 +52,21 @@
     font-size: 1.1rem;
     color: #666;
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.slide-button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-button:hover {
+    background-color: #5b4bc4;
 }
 
 .slide-image {
@@ -211,4 +226,19 @@
     border-radius: 4px;
     color: #666;
     font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+.artist-button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.artist-button:hover {
+    background-color: #5b4bc4;
 }
