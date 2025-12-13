@@ -21,10 +21,11 @@ nav {
     left: 2rem;
     top: 50%;
     transform: translateY(-50%);
+    padding-top: 0.5rem;
 }
 
 .logo-animated {
-    height: 110px;
+    height: 150px;
     width: auto;
     animation: slideInBounce 1s ease-out;
 }
