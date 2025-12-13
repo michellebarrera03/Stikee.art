@@ -66,3 +66,9 @@
 .card-button:hover {
     background-color: #5b4bc4;
 }
+
+.logo-animated {
+    height: 150px;
+    width: auto;
+    animation: none;
+}
