@@ -275,3 +275,35 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     animation: none;
 }
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 1rem;
+    }
+    
+    .slide {
+        flex-direction: column;
+    }
+    
+    .slide-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-arrow {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .artists-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .page-container {
+        padding: 2rem 1rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
