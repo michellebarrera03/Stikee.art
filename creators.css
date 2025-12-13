@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .page-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -81,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     margin-bottom: 1rem;
 }
+
 .slide-button {
     background-color: #6c5ce7;
     color: white;
@@ -111,7 +111,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: cover;
 }
-
 
 .carousel-arrow {
     position: absolute;
@@ -255,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
 }
+
 .artist-button {
     background-color: #6c5ce7;
     color: white;
@@ -269,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 .artist-button:hover {
     background-color: #5b4bc4;
 }
+
 .logo-animated {
     height: 150px;
     width: auto;
