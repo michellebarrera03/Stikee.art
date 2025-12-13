@@ -13,15 +13,40 @@ body {
 nav {
     background-color: #6c5ce7;
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    flex-shrink: 0;
+}
+
+.logo-animated {
+    height: 50px;
+    width: auto;
+    animation: slideInBounce 1s ease-out;
+}
+
+@keyframes slideInBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.5);
+    }
+    60% {
+        transform: translateX(10px) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
+    margin: 0;
 }
 
 nav a {
@@ -93,11 +118,37 @@ nav a:hover {
     border-radius: 8px;
     text-align: center;
     border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
 }
 
 .grid-item h3 {
     margin-bottom: 0.5rem;
     color: #6c5ce7;
+}
+
+.grid-item p {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.grid-button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.grid-button:hover {
+    background-color: #5b4bc4;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
 }
 
 footer {
