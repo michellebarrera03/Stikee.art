@@ -146,6 +146,13 @@
     font-size: 0.9rem;
     color: #666;
 }
+.nav-logo {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 0.5rem;
+}
 .logo-animated {
     height: 150px;
     width: auto;
