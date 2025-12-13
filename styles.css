@@ -195,7 +195,7 @@ footer {
     padding: 1.5rem;
     margin-top: 2rem;
 }
-/* Mobile Responsive */
+/* Media Mobile Screen Tag */
 @media (max-width: 1024px) {
     nav {
         padding: 1rem;
