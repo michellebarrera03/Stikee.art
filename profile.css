@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     nav {
         padding: 1rem;
     }
@@ -195,17 +195,23 @@ h1, h2, h3, h4, h5, h6 {
         position: static;
         transform: none;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-animated {
+        height: 60px;
     }
 
     nav ul {
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 0.8rem;
+        gap: 0.5rem;
         justify-content: center;
     }
 
     nav a {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
     }
 
     .page-container {
