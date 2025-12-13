@@ -101,7 +101,34 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
 }
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-animated {
+        height: 100px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+
     .cards-container {
         grid-template-columns: 1fr;
         max-width: 100%;
