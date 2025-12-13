@@ -146,3 +146,8 @@
     font-size: 0.9rem;
     color: #666;
 }
+.logo-animated {
+    height: 70px;
+    width: auto;
+    animation: none;
+}
