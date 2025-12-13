@@ -184,26 +184,54 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
-    .profile-header {
-        flex-direction: column;
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        position: static;
+        transform: none;
         text-align: center;
+        margin-bottom: 1rem;
     }
-    
-    .section-title {
-        font-size: 1.5rem;
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    
-    .stickers-grid {
-        grid-template-columns: 1fr;
-    }
-    
+
     .page-container {
         padding: 2rem 1rem;
     }
-    
+
     .page-title {
         font-size: 2rem;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .profile-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .share-button {
+        margin-left: 0;
+    }
+
+    .stickers-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
