@@ -70,6 +70,10 @@
     object-fit: cover;
 }
 
+.slide:first-child .slide-image {
+    height: 400px;
+}
+
 .carousel-arrow {
     position: absolute;
     top: 50%;
