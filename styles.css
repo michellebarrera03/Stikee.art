@@ -195,6 +195,46 @@ footer {
     padding: 1.5rem;
     margin-top: 2rem;
 }
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #5b4bc4;
+}
 /* Media Mobile Screen Tag */
 @media (max-width: 1024px) {
     nav {
